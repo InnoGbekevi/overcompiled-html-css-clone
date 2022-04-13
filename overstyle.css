@@ -1,7 +1,7 @@
 body {
     background-color: rgb(18, 106, 128);
     color: white;
-    width: 900px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -30,14 +30,92 @@ li {
 }
 .plan {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .date {
-    font-size: 25px;
+    font-size: 20px;
     color: gray;
 }
 
 footer {
     margin-top: 200px;
+}
+
+#logo a,
+#logo{
+    transition-duration: 1s;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row
+}
+
+.oc-logo{
+    width: 2rem;
+    height: 2rem;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    display: flex;
+    border-radius: 9999px;
+    overflow: hidden;
+    justify-content: space-between;
+    cursor: pointer;
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    margin: 0px;
+    padding: 0px;
+}
+
+.transition-colors {
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+
+.child-logo-left{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #ff00ff;
+    margin-left: -0.75rem;
+    border-radius: 9999px;
+    margin-top: 4px;
+}
+
+.child-logo-right{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #555;
+    margin-right:  -0.75rem;
+    border-radius: 9999px;
+    margin-top: 4px;
+}
+
+.group:hover .group-hover\:bg-pink-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(219,39,119,var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:border-black {
+    --tw-border-opacity: 1;
+    border-color: rgba(0,0,0,var(--tw-border-opacity));
+    border-color: rgb(18, 106, 128, var(--tw-border-opacity));
+}
+
+.group:hover .group-hover\:scale-105 {
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+    transform: var(--tw-transform);
+}
+
+.group:hover .group-hover\:rotate-180 { 
+    --tw-rotate: 180deg;
+    transform: var(--tw-transform);
+    transform: rotate(180deg);
+}
+
+.group:hover .group-hover\:bg-green-400 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(52,211,153,var(--tw-bg-opacity));
 }
